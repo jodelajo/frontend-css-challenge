@@ -98,8 +98,9 @@ button {
   }
   main {
     padding: 40px;
-    background-position: left 384px top -270px;
-    background-size: 800px;
+    background-position: 250% -50%;
+
+    background-size: 80%;
   }
 
   .logo {
@@ -109,7 +110,6 @@ button {
   .first-block {
     justify-content: flex-start;
     align-items: flex-start;
-    padding-bottom: 180px;
     /* padding-top: 32px; */
   }
   .charts {
@@ -152,9 +152,9 @@ button {
 
   main {
     padding: 165px;
-    background-position: left 770px top -550px;
+    background-position: 230% -420px;
 
-    background-size: 90%;
+    background-size: 80%;
   }
   .charts {
     width: 100%;

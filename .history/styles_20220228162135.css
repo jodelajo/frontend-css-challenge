@@ -52,11 +52,11 @@ main {
   background-repeat: no-repeat;
   background-position: center -146px;
   background-attachment: fixed;
-  background-size: 100%;
+  background-size: 458px 458px;
   padding: 24px;
 }
 .first-block {
-  padding-bottom: 100px;
+  /* padding-bottom: 100px; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -92,14 +92,14 @@ button {
 }
 
 /* TABLET STYLES */
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   h1 {
     text-align: start;
   }
   main {
     padding: 40px;
-    background-position: left 384px top -270px;
-    background-size: 800px;
+    background-position: 395px -160px;
+    background-size: 666px 666px;
   }
 
   .logo {
@@ -109,11 +109,10 @@ button {
   .first-block {
     justify-content: flex-start;
     align-items: flex-start;
-    padding-bottom: 180px;
     /* padding-top: 32px; */
   }
   .charts {
-    width: 80%;
+    width: 88%;
   }
   .charts-div {
     position: absolute;
@@ -123,20 +122,11 @@ button {
   .textandbutton {
     margin-top: 50px;
     text-align: start;
-    width: 50%;
-  }
-  .textandbutton p {
-    margin-top: 24px;
-    margin-bottom: 24px;
-    padding-right: 4px;
-  }
-  .textandbutton h1 {
-    padding-right: 10px;
+    width: 345px;
   }
 }
-
 /* DESKTOP STYLES */
-@media (min-width: 1440px) {
+@media (min-wdth: 1200px) {
   h1 {
     font-size: 56px;
     line-height: 64px;
@@ -148,20 +138,5 @@ button {
   h3 {
     font-size: 16px;
     line-height: 48px;
-  }
-
-  main {
-    padding: 165px;
-    background-position: left 770px top -550px;
-
-    background-size: 90%;
-  }
-  .charts {
-    width: 100%;
-  }
-  .charts-div {
-    position: absolute;
-    top: 150px;
-    left: 60%;
   }
 }

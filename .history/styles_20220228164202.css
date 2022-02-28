@@ -52,7 +52,7 @@ main {
   background-repeat: no-repeat;
   background-position: center -146px;
   background-attachment: fixed;
-  background-size: 100%;
+  /* background-size: 458px 458px; */
   padding: 24px;
 }
 .first-block {
@@ -98,8 +98,9 @@ button {
   }
   main {
     padding: 40px;
-    background-position: left 384px top -270px;
-    background-size: 800px;
+    background-position: 20% -50%;
+
+    /* background-size: 120%; */
   }
 
   .logo {
@@ -109,7 +110,6 @@ button {
   .first-block {
     justify-content: flex-start;
     align-items: flex-start;
-    padding-bottom: 180px;
     /* padding-top: 32px; */
   }
   .charts {
@@ -136,7 +136,7 @@ button {
 }
 
 /* DESKTOP STYLES */
-@media (min-width: 1440px) {
+@media (min-wdth: 1440px) {
   h1 {
     font-size: 56px;
     line-height: 64px;
@@ -148,20 +148,5 @@ button {
   h3 {
     font-size: 16px;
     line-height: 48px;
-  }
-
-  main {
-    padding: 165px;
-    background-position: left 770px top -550px;
-
-    background-size: 90%;
-  }
-  .charts {
-    width: 100%;
-  }
-  .charts-div {
-    position: absolute;
-    top: 150px;
-    left: 60%;
   }
 }
