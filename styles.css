@@ -60,6 +60,7 @@ main {
   background-position: center -140px;
   background-attachment: fixed;
   background-size: 110%;
+  width: 100vw;
 }
 .main-wrapper {
   padding: 0 24px;
@@ -116,7 +117,7 @@ button {
 @media (min-width: 767px) {
   main {
     background-position: 400px -140px;
-    background-size: 68%;
+    background-size: 80%;
   }
   .main-wrapper {
     padding: 0 39px;
