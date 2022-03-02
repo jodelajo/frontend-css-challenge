@@ -7,19 +7,28 @@
   --colors-blackblue: #25293a;
   --colors-red: #f05b5b;
 }
+* {
+  font-family: "Kumbh Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+}
 
 /* MOBILE STYLES */
 body {
-  font-family: "Kumbh Sans", sans-serif;
   color: var(--colors-grey);
-  font-size: 16px;
-  line-height: 26px;
+
   font-weight: 400;
   background-color: var(--colors-background);
-  margin: 0;
-  padding: 0;
+
   width: 100vw;
   height: 100%;
+}
+
+body p {
+  font-size: 16px;
+  line-height: 26px;
+  /* padding:  6px; */
 }
 
 h1 {
@@ -40,20 +49,21 @@ h3 {
   line-height: 48px;
 }
 .logo {
+  margin-top: 46px;
   width: 155px;
   height: 30px;
-  margin-top: 48px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 main {
   background-image: url("./assets/home/bg-pattern-header.svg");
   background-repeat: no-repeat;
-  background-position: center -146px;
+  background-position: center -140px;
   background-attachment: fixed;
-  background-size: 100%;
-  padding: 24px;
+  background-size: 110%;
+  width: 100vw;
+}
+.main-wrapper {
+  padding: 0 24px;
 }
 .first-block {
   padding-bottom: 100px;
@@ -69,14 +79,14 @@ main {
 }
 
 .charts {
+  height: 300px;
   width: 60%;
-  margin-top: 70px;
-  /* background-color: #f05b5b; */
+  height: auto;
+  margin-top: 60px;
 }
 .charts-div {
   position: relative;
 }
-
 button {
   border-radius: 28px;
   border: none;
@@ -85,40 +95,54 @@ button {
   font-weight: bold;
   box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
 }
-
+.textandbutton h1 {
+  margin-bottom: 24px;
+}
 .button-blue {
+  margin-top: 24px;
   background-color: var(--colors-blue);
   color: white;
 }
 
+/* OFFER BLOCK */
+/* .offer {
+  background-color: white;
+
+  box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+  border-radius: 13px;
+  padding: 40px 53px;
+} */
+
 /* TABLET STYLES */
-@media (min-width: 768px) {
-  h1 {
+@media (min-width: 767px) {
+  main {
+    background-position: 400px -140px;
+    background-size: 80%;
+  }
+  .main-wrapper {
+    padding: 0 39px;
+  }
+  .logo {
+  }
+  .first-block {
+    justify-content: stretch;
+    align-items: flex-start;
+
+    padding-bottom: 280px;
+    padding-top: 32px;
+    /* margin: 0 39px; */
+  }
+  .first-block h1 {
     text-align: start;
   }
-  main {
-    padding: 40px;
-    background-position: left 384px top -270px;
-    background-size: 800px;
-  }
-
-  .logo {
-    margin-left: 0%;
-  }
-
-  .first-block {
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding-bottom: 180px;
-    /* padding-top: 32px; */
-  }
   .charts {
-    width: 80%;
+    /* width: 100%; */
   }
   .charts-div {
     position: absolute;
     top: 150px;
-    left: 50%;
+    right: -80px;
+    /* width: 80%; */
   }
   .textandbutton {
     margin-top: 50px;
@@ -134,9 +158,12 @@ button {
     padding-right: 10px;
   }
 }
-
 /* DESKTOP STYLES */
 @media (min-width: 1440px) {
+  body {
+    font-size: 18px;
+    line-height: 28px;
+  }
   h1 {
     font-size: 56px;
     line-height: 64px;
@@ -151,17 +178,28 @@ button {
   }
 
   main {
-    padding: 165px;
-    background-position: left 770px top -550px;
-
+    background-position: 670px -550px;
     background-size: 90%;
   }
+  .main-wrapper {
+    padding: 0px 165px;
+  }
+  /* .first-block {
+   
+  } */
   .charts {
     width: 100%;
   }
   .charts-div {
     position: absolute;
     top: 150px;
-    left: 60%;
+    right: 165px;
+  }
+
+  .logo {
+    margin-top: 81px;
+  }
+  .textandbutton p {
+    padding-right: 34px;
   }
 }
