@@ -11,7 +11,6 @@
   font-family: "Kumbh Sans", sans-serif;
   margin: 0;
   padding: 0;
-  /* border: 1px solid red; */
 }
 
 /* MOBILE STYLES */
@@ -28,7 +27,6 @@ body {
 body p {
   font-size: 16px;
   line-height: 26px;
-  /* padding:  6px; */
 }
 
 h1 {
@@ -93,25 +91,163 @@ button {
   width: 171px;
   height: 56px;
   font-weight: bold;
-  box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
 }
 .textandbutton h1 {
   margin-bottom: 24px;
 }
+
+/* BUTTON */
 .button-blue {
   margin-top: 24px;
   background-color: var(--colors-blue);
   color: white;
+  box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
+}
+.button-blue:hover {
+  background-color: var(--colors-light-blue);
+}
+.button-white {
+  margin-top: 32px;
+  color: var(--colors-blue);
+  background-color: white;
+}
+.button-white:hover {
+  color: var(--colors-light-blue);
+}
+.button-grey {
+  margin-top: 32px;
+  background-color: rgba(81, 117, 255, 0.15);
+
+  color: var(--colors-blue);
+}
+.button-grey:hover {
+  background-color: rgba(81, 117, 255, 0.25);
+}
+.button-counter {
+  margin-top: 40px;
+  background-color: var(--colors-blue);
+  color: white;
+}
+.button-counter:hover {
+  background-color: var(--colors-light-blue);
 }
 
 /* OFFER BLOCK */
-/* .offer {
-  background-color: white;
-
+.offer {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+#card {
+  text-align: center;
   box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
   border-radius: 13px;
   padding: 40px 53px;
-} */
+  font-size: 16px;
+
+  margin-bottom: 30px;
+}
+
+.white-card {
+  background-color: white;
+  color: var(--colors-dark);
+}
+.blue-card {
+  background-color: var(--colors-blue);
+  color: white;
+  background-image: url("./assets/home/bg-pattern-pricing.svg");
+  background-repeat: no-repeat;
+  background-position: center -390px;
+}
+
+.program {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+
+  margin-bottom: 40px;
+}
+.free {
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 64px;
+  margin-bottom: 8px;
+}
+.users {
+  line-height: 28px;
+  margin-bottom: 56px;
+}
+#text {
+  line-height: 38px;
+  position: relative;
+}
+.text-white {
+  color: var(--colors-grey);
+}
+.text-blue {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* FOOTER */
+.footer-home {
+  background-image: url("./assets/home/bg-pattern-footer.svg");
+  background-repeat: no-repeat;
+  background-position: bottom -110px center;
+  background-size: 340%;
+  background-color: var(--colors-blackblue);
+  margin-top: -820px;
+  padding: 820px 0 100px 0;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+.counter-section {
+  margin-top: 100px;
+  text-align: center;
+}
+.counter {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 24px;
+}
+.counter-item {
+  background-color: var(--colors-dark);
+  padding: 0;
+  color: white;
+  width: 72px;
+  border-radius: 4px;
+}
+.counter-title {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 18px;
+  font-size: 16px;
+  letter-spacing: 5px;
+  line-height: 48px;
+}
+.counter-title span {
+  color: var(--colors-blue);
+}
+.counter-numbers {
+  display: flex;
+  column-gap: 13px;
+}
+.number {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  margin-top: 10px;
+}
+.time {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 28px;
+  opacity: 50%;
+  margin-bottom: 10px;
+}
 
 /* TABLET STYLES */
 @media (min-width: 767px) {
@@ -122,27 +258,21 @@ button {
   .main-wrapper {
     padding: 0 39px;
   }
-  .logo {
-  }
   .first-block {
     justify-content: stretch;
     align-items: flex-start;
 
-    padding-bottom: 280px;
+    padding-bottom: 140px;
     padding-top: 32px;
-    /* margin: 0 39px; */
   }
   .first-block h1 {
     text-align: start;
   }
-  .charts {
-    /* width: 100%; */
-  }
+
   .charts-div {
     position: absolute;
     top: 150px;
     right: -80px;
-    /* width: 80%; */
   }
   .textandbutton {
     margin-top: 50px;
@@ -157,7 +287,44 @@ button {
   .textandbutton h1 {
     padding-right: 10px;
   }
+
+  /* OFFER-BLOCK */
+  #card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    padding: 48px 53px;
+  }
+  .blue-card {
+    background-position: -320px center;
+  }
+  #text {
+    align-self: flex-end;
+    position: absolute;
+  }
+  .button-white {
+    margin-top: 0;
+  }
+  .button-grey {
+    margin-top: 0;
+  }
+  .users {
+    margin-bottom: 24px;
+  }
+  .program {
+    margin-bottom: 16px;
+  }
+
+  /* FOOTER */
+  .footer-home {
+    margin-top: -530px;
+    padding-top: 530px;
+    background-position: bottom -560px center;
+    background-size: 200%;
+  }
 }
+
 /* DESKTOP STYLES */
 @media (min-width: 1440px) {
   body {
@@ -184,9 +351,9 @@ button {
   .main-wrapper {
     padding: 0px 165px;
   }
-  /* .first-block {
-   
-  } */
+  .first-block {
+    padding-bottom: 280px;
+  }
   .charts {
     width: 100%;
   }
@@ -201,5 +368,67 @@ button {
   }
   .textandbutton p {
     padding-right: 34px;
+  }
+
+  /* OFFER-BLOCK */
+  .offer {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+  }
+
+  #card {
+    text-align: center;
+    padding: 40px 53px;
+    justify-content: center;
+    align-items: center;
+  }
+  .blue-card {
+    background-position: center -390px;
+  }
+  #text {
+    align-self: center;
+    position: relative;
+  }
+  .button-white {
+    margin-top: 32px;
+  }
+  .button-grey {
+    margin-top: 32px;
+  }
+  .users {
+    margin-bottom: 24px;
+  }
+  .program {
+    margin-bottom: 16px;
+  }
+
+  /* FOOTER */
+  .footer-home {
+    margin-top: -250px;
+    padding-top: 250px;
+    background-position: left -580px bottom -700px;
+    background-size: 120%;
+  }
+  .counter-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 165px;
+  }
+  .counter-numbers {
+    display: flex;
+    column-gap: 13px;
+  }
+  .counter-item {
+    padding: 13px;
+  }
+  .number {
+    font-size: 56px;
+  }
+  .time {
+    font-size: 16px;
+    line-height: 28px;
   }
 }
