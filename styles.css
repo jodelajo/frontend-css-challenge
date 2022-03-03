@@ -11,7 +11,6 @@
   font-family: "Kumbh Sans", sans-serif;
   margin: 0;
   padding: 0;
-  /* border: 1px solid red; */
 }
 
 /* MOBILE STYLES */
@@ -28,7 +27,6 @@ body {
 body p {
   font-size: 16px;
   line-height: 26px;
-  /* padding:  6px; */
 }
 
 h1 {
@@ -99,7 +97,6 @@ button {
 }
 
 /* BUTTON */
-
 .button-blue {
   margin-top: 24px;
   background-color: var(--colors-blue);
@@ -160,8 +157,6 @@ button {
   background-image: url("./assets/home/bg-pattern-pricing.svg");
   background-repeat: no-repeat;
   background-position: center -390px;
-  /* background-attachment: fixed; */
-  /* background-size: 1400px; */
 }
 
 .program {
@@ -198,14 +193,10 @@ button {
   background-repeat: no-repeat;
   background-position: bottom -110px center;
   background-size: 340%;
-  /* height: 300px; */
-  /* background-color: #25293a; */
   background-color: var(--colors-blackblue);
   margin-top: -820px;
   padding: 820px 0 100px 0;
-  /* height: 1248px; */
   margin-bottom: 0;
-  /* padding-bottom: 100px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -226,7 +217,6 @@ button {
   padding: 0;
   color: white;
   width: 72px;
-  /* height: 92px; */
   border-radius: 4px;
 }
 .counter-title {
@@ -268,27 +258,21 @@ button {
   .main-wrapper {
     padding: 0 39px;
   }
-  .logo {
-  }
   .first-block {
     justify-content: stretch;
     align-items: flex-start;
 
     padding-bottom: 140px;
     padding-top: 32px;
-    /* margin: 0 39px; */
   }
   .first-block h1 {
     text-align: start;
   }
-  .charts {
-    /* width: 100%; */
-  }
+
   .charts-div {
     position: absolute;
     top: 150px;
     right: -80px;
-    /* width: 80%; */
   }
   .textandbutton {
     margin-top: 50px;
@@ -338,8 +322,6 @@ button {
     padding-top: 530px;
     background-position: bottom -560px center;
     background-size: 200%;
-    /* width: 100vw; */
-    /* background-position: bottom -110px center; */
   }
 }
 
@@ -421,17 +403,11 @@ button {
   }
 
   /* FOOTER */
-  footer {
-  }
   .footer-home {
     margin-top: -250px;
     padding-top: 250px;
-
     background-position: left -580px bottom -700px;
     background-size: 120%;
-    /* padding: 0px 165px; */
-    /* width: 100vw; */
-    /* background-position: bottom -110px center; */
   }
   .counter-section {
     display: flex;
